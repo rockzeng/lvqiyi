@@ -29,11 +29,11 @@
                             <span id="login_links">
                                 <div class="inset">
                                     <?php if ((isset($fb_data['uid'])) && ($fb_data['uid'] != 0)): ?>
-                                        <a class="fb login_button" href="<?php echo site_url(); ?>"></a>
+                                        <a class="login_button" href="<?php echo site_url(); ?>"></a>
                                     <?php else: ?>
-                                        <a class="fb login_button" href="<?php echo $fb_data['loginUrl']; ?>">
+                                        <a class="login_button" href="<?php echo $fb_data['loginUrl']; ?>">
                                         <?php endif ?>
-                                        <span>使用Facebook登录</span>
+                                        <span><img src="<?php echo base_url(); ?>application/assets/images/sina_btn.png"/></span>
                                     </a>
                                 </div>
                                 <div class="inset">
