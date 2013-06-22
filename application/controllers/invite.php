@@ -526,7 +526,7 @@ class Invite extends CI_Controller {
      */
     function test()
     {   error_reporting(0);
-        $data['email'] = 'vishal@cubettech.com';
+        $data['email'] = '317009893@qq.com';
         $this->load->view('register',$data);
     }
 }

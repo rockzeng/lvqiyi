@@ -7,7 +7,7 @@ $config['wordwrap']     = true;
 
 
 // user registration
-$config['register_from_email']     = 'info@pinterestclone';
+$config['register_from_email']     = 'chilly-tom@163.com';
 $config['register_from_name']     = '绿奇异';
 $config['register_email_subject']     = '非常感谢您注册我们';
 
