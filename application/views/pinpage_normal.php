@@ -1,5 +1,6 @@
 <?php $this->load->view('header')?>
 <link href="<?php echo base_url(); ?>application/assets/css/popup.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=228825110' charset='utf-8'></script>
 <script type="text/javascript">
     function addPinComment()
     {
@@ -412,7 +413,8 @@
                         <ul class="pinboard-share-bottons">
                             <li><wb:share-button size='big' url='<?php echo current_url();?>'
                                                  title="<?php echo $pinDetails->description; ?>"
-                                                 appkey="228825110" relateuid="1993193342" ></wb:share-button><script type='text/javascript' src='http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=228825110' charset='utf-8'></script></li>
+                                                 pic='<?php echo $pinDetails->pin_url;?>'
+                                                 appkey="228825110" relateuid="1993193342" ></wb:share-button></li>
                             <li><a href="<?php echo site_url('action/email/'.$boardId.'/'.$pinId)?>"  id="EmailShare" class="Button2 Button13 WhiteButton ajax"><strong>@ 分享给朋友</strong><span></span></a></li>
                             <li><a href="<?php echo site_url('action/report/'.$boardId.'/'.$pinId)?>" id="PinReport" class="Button2 Button13 WhiteButton ajax"><strong>&#9872; 举报</strong><span></span></a></li>
                             <li><a href="<?php echo site_url('action/embed/'.$boardId.'/'.$pinId)?>"  id="PinEmbed" class="Button2 Button13 WhiteButton ajax"><strong>&lt;&gt; 嵌入至博客</strong><span></span></a></li>
