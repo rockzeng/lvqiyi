@@ -410,8 +410,7 @@
                         </script>
 
                         <ul class="pinboard-share-bottons">
-                            <li><a title="Share this article/post/whatever on Facebook" href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo current_url();?>&p[images][0]=<?php echo $pinDetails->pin_url;?>&p[title]=<?php echo $pinDetails->description;?>&p[summary]=<?php echo "share from my cubetboard application";?>"target="_blank"><img src="<?php echo site_url('application/assets/images/facebook_button.png')?>" width='75px' height='30px'</a></li>
-                            <li><wb:share-button size='big' url='$sitelink'
+                            <li><wb:share-button size='big' url='<?php echo current_url();?>'
                                                  title="<?php echo $pinDetails->description; ?>"
                                                  appkey="228825110" relateuid="1993193342" ></wb:share-button><script type='text/javascript' src='http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=228825110' charset='utf-8'></script></li>
                             <li><a href="<?php echo site_url('action/email/'.$boardId.'/'.$pinId)?>"  id="EmailShare" class="Button2 Button13 WhiteButton ajax"><strong>@ 分享给朋友</strong><span></span></a></li>
